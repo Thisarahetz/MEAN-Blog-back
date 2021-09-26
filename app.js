@@ -12,6 +12,8 @@ var urlencodedParser = bodyParser.urlencoded({ extended: false })
 
 
 var app = express();
+app.set('port', 8080);
+app.listen(app.get('port'));
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
